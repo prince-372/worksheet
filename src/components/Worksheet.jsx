@@ -11,6 +11,7 @@ import lemon from "../assets/image/lemon.png";
 import form from "../assets/image/form.png";
 import next from "../assets/image/next-js.svg";
 import logovite from "../assets/image/vitelogo.png";
+import noble from "../assets/image/noblemind.png"
 
 const Worksheet = () => {
   const [first, setFirst] = useState(0);
@@ -139,6 +140,19 @@ const Worksheet = () => {
         },
       ],
     },
+    {
+      month: "March",
+      projects: [
+        {
+          id: 1,
+          title: "noblemind",
+          gitHubLink: "https://github.com/prince-372/noble-mind",
+          liveLink: "https://noble-mind-omega.vercel.app/",
+          image: noble,
+          date: 6,
+        },
+      ],
+    },
   ];
 
   return (
@@ -172,6 +186,14 @@ const Worksheet = () => {
               } text-base capitalize py-3 px-10 rounded-lg`}
             >
               March
+            </button>
+            <button
+              onClick={() => tabChange(3)}
+              className={`${
+                first === 3 && "text-white bg-blue-600"
+              } text-base capitalize py-3 px-10 rounded-lg`}
+            >
+              April
             </button>
           </div>
         </div>
