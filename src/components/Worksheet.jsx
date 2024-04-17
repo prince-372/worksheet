@@ -15,7 +15,12 @@ import noble from "../assets/image/noblemind.png";
 import email from "../assets/image/email-jsss.png";
 
 const Worksheet = () => {
-  const [first, setFirst] = useState(0);
+  function getdate(){
+    const today = new Date();
+    const month = today.getMonth()
+    return month
+  }
+  const [first, setFirst] = useState(getdate());
 
   const tabChange = (tabIndex) => {
     setFirst(tabIndex);
