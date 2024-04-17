@@ -172,11 +172,11 @@ const Worksheet = () => {
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-8">
-        <div className="col-span-2 bg-white rounded-lg shadow-md">
+        <div className="col-span-2 bg-white rounded-lg shadow-md border-[2px] border-blue-600">
           <h1 className="pt-10 text-3xl font-medium text-center text-black">
             WorkSheet 2024
           </h1>
-          <div className="flex flex-col items-center justify-center gap-6 pt-16">
+          <div className="flex flex-col items-center justify-center gap-6 pt-16 ">
             <button
               onClick={() => tabChange(0)}
               className={`${
@@ -187,7 +187,7 @@ const Worksheet = () => {
             </button>
             <button
               onClick={() => tabChange(1)}
-              className={`${
+              className={`${        
                 first === 1 && "text-white bg-blue-600"
               } text-base capitalize py-3 px-10 rounded-lg`}
             >
@@ -217,7 +217,7 @@ const Worksheet = () => {
               key={index}
               className={`${first === index ? "block" : "hidden"}`}
             >
-              <div className="p-4 bg-white shadow-xl rounded-2xl">
+              <div className="p-4 bg-white shadow-xl rounded-2xl border-blue-600 border-[2px]">
                 <h2 className="text-2xl text-black opacity-90">
                   {monthData.month} Topics :-
                 </h2>
