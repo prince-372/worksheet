@@ -11,7 +11,8 @@ import lemon from "../assets/image/lemon.png";
 import form from "../assets/image/form.png";
 import next from "../assets/image/next-js.svg";
 import logovite from "../assets/image/vitelogo.png";
-import noble from "../assets/image/noblemind.png"
+import noble from "../assets/image/noblemind.png";
+import email from "../assets/image/email-jsss.png";
 
 const Worksheet = () => {
   const [first, setFirst] = useState(0);
@@ -141,7 +142,7 @@ const Worksheet = () => {
       ],
     },
     {
-      month: "March",
+      month: "April",
       projects: [
         {
           id: 1,
@@ -149,6 +150,14 @@ const Worksheet = () => {
           gitHubLink: "https://github.com/prince-372/noble-mind",
           liveLink: "https://noble-mind-omega.vercel.app/",
           image: noble,
+          date: 6,
+        },
+        {
+          id: 2,
+          title: "emailjs",
+          gitHubLink: "https://github.com/prince-372/task-email",
+          liveLink: "https://task-email.vercel.app/",
+          image: email,
           date: 6,
         },
       ],
